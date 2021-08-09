@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="32dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/clJudul"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        >
+        <ImageView
+            android:id="@+id/ivBtnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_button_back"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+
+            />
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="28sp"
+            android:textColor="#1f2d3d"
+            android:lineSpacingExtra="9sp"
+            android:layout_marginTop="8dp"
+            tools:text = "Daftar Salvo"
+            app:layout_constraintTop_toBottomOf="@+id/ivBtnBack"
+            app:layout_constraintLeft_toLeftOf="parent"
+
+            />
+        <TextView
+            android:id="@+id/tvSubTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textSize="16sp"
+            android:textColor="#1f2d3d"
+            android:letterSpacing="0.01"
+            android:lineSpacingExtra="10sp"
+            android:layout_marginTop="8dp"
+            tools:text="Isi data profil dulu yuk!"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+            app:layout_constraintLeft_toLeftOf="parent"
+            />
+
+        <RelativeLayout
+            android:id="@+id/rlGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/ivBtnBack"
+            app:layout_constraintLeft_toRightOf="@id/tvTitle"
+            app:layout_constraintBottom_toBottomOf="@id/tvSubTitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            >
+
+            <ImageView
+                android:id="@+id/ivGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_group"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/tvGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/ivGroup"
+                android:layout_alignTop="@id/ivGroup"
+                android:layout_alignRight="@id/ivGroup"
+                android:layout_alignBottom="@id/ivGroup"
+                android:gravity="center"
+                android:letterSpacing="0.01"
+                android:lineSpacingExtra="10sp"
+                android:textColor="#6a7481"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                tools:text="1/3" />
+
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/vFrom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
